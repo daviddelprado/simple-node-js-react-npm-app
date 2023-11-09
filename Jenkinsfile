@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sudo npm cache clean --force
                 sh 'npm install' 
             }
         }
